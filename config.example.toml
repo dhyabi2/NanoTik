@@ -1,0 +1,56 @@
+# NanoTik Configuration File
+# Copy this file to config.toml and fill in your API keys
+
+[app]
+# LLM Provider Selection
+# Options: "openrouter", "openai", "deepseek", "moonshot"
+llm_provider = "openrouter"
+
+# OpenRouter Configuration (Recommended - Cheapest)
+openrouter_api_key = "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"
+openrouter_model_name = "google/gemini-2.0-flash-001"
+
+# OpenAI Configuration
+openai_api_key = ""
+openai_base_url = "https://api.openai.com/v1"
+openai_model_name = "gpt-4"
+
+# DeepSeek Configuration
+deepseek_api_key = ""
+
+# Moonshot Configuration
+moonshot_api_key = ""
+
+# Video Source API Keys
+pexels_api_keys = []
+pixabay_api_keys = []
+
+[azure]
+# Azure Speech Services
+speech_key = ""
+speech_region = "eastus"
+
+[video]
+# Video Generation Settings
+output_dir = "./output"
+temp_dir = "./temp"
+music_dir = "./music"
+max_duration = 180
+default_resolution = "1920x1080"
+
+# Subtitle Configuration
+# Options: "edge" (Azure Speech), "whisper" (Local AI), or "" (no subtitles)
+subtitle_provider = "edge"
+
+# Subtitle Appearance
+[video.subtitle]
+font = "Arial"
+font_size = 60
+text_color = "white"
+stroke_color = "black"
+stroke_width = 2
+
+[payment]
+# Nano Payment Configuration
+nano_mcp_url = "https://nano-mcp.replit.app"
+nano_wallet_address = ""
